@@ -1,0 +1,20 @@
+instances:
+  - name: "Dev_Server"
+    ami: ami-0c55b159cbfafe1f0
+    #instance_type: t2.micro
+    subnet_id: subnet-12345678
+    volume_size: 20
+    volume_type: "gp2"
+    key_name: "my_dev_key"
+    public_ip: true
+    instance_profile: "my_instance_profile"
+  - name: "Prod_Server" 
+    ami: ami-0c55b159cbfafe1f0
+    instance_type: t2.micro
+    subnet_id: subnet-87654321
+    volume_size: 21
+    volume_type: "gp3"
+    key_name: "my_prod_key"
+    public_ip: false
+    #instance_profile: "my_instance_profile"
+
